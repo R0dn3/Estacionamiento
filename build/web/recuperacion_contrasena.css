@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+.email-container, .password-container {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    background-color: #0275d8;
+    color: white;
+    font-size: 16px;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #025aa5;
+}
+
+.password-hint {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.password-strength {
+    font-size: 14px;
+}
+
+#password-status {
+    font-weight: bold;
+    color: red;
+}
+
+progress {
+    width: 100%;
+    height: 20px;
+}
+
+progress[value]::-webkit-progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+}
+
+progress[value]::-webkit-progress-value {
+    background-color: #ff0000; /* rojo para "Demasiado corta" */
+    border-radius: 5px;
+}
+
+progress.good[value]::-webkit-progress-value {
+    background-color: #ffcc00; /* amarillo para "Bueno" */
+}
+
+progress.strong[value]::-webkit-progress-value {
+    background-color: #00cc00; /* verde para "Contraseña segura" */
+}
+

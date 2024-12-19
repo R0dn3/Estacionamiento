@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.login-options, .admin-login, .vehicle-info, .parking-lots {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.icon-placeholder {
+    width: 80px;
+    height: 80px;
+    background-color: #ccc;
+    margin: 0 auto 10px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+.numeric-pad button {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5em;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.parking-lots {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.parking-space {
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.ocupado {
+    background-color: red;
+}
+
+.disponible {
+    background-color: green;
+}
+
+.status {
+    margin-top: 20px;
+}
+
+.status-ocupado, .status-disponible {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 5px 10px;
+    font-weight: bold;
+}
+
+.status-ocupado {
+    color: red;
+}
+
+.status-disponible {
+    color: green;
+}
+
+
+/* Añade esto para que el teclado numérico se vea mejor organizado */
+.numeric-pad {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.numeric-pad button {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5em;
+    cursor: pointer;
+    background-color: #f4f4f4;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+.numeric-pad button:hover {
+    background-color: #ddd;
+}
+
+/* Ajuste de los espacios de parqueo */
+.parking-lots {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+.option img {
+    width: 100px;  /* Ancho ajustado */
+    height: auto;  /* Mantiene la proporción de la imagen */
+    margin-bottom: 10px; /* Espacio debajo de la imagen */
+}
+

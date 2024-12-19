@@ -1,0 +1,489 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    margin-right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.admin-icon {
+    margin-left: 5px;
+}
+
+.header-right {
+    text-align: right;
+}
+
+.header-right span {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    height: calc(100vh - 50px);
+}
+
+/* Barra lateral (navegación) */
+.sidebar {
+    width: 200px;
+    background-color: #2f3b45;
+    color: white;
+    padding: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 20px;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    padding: 10px 0;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    background-color: #1d252e;
+    padding-left: 10px;
+}
+
+/* Panel de control */
+.dashboard {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 40px;
+}
+
+.card {
+    background-color: #fff;
+    width: 180px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.card-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.card-title {
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+.card-number {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .dashboard {
+        flex-direction: column;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+/* Tabla de Tarifas (centrada y en formato "dashboard") */
+.tarifa-table-container {
+    margin: 0 auto;
+    max-width: 80%;
+}
+
+.tarifa-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #f7f7f7;
+}
+
+.tarifa-table th, .tarifa-table td {
+    border: 1px solid #ccc;
+    padding: 15px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.tarifa-table th {
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+}
+
+.tarifa-table td {
+    background-color: #fff;
+    font-size: 14px;
+}
+
+.tarifa-table .icon-btn {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+/* Botones de acción (Editar y Eliminar) */
+.btn-eliminar {
+    color: #d9534f;
+}
+
+.btn-editar {
+    color: #5bc0de;
+}
+
+.btn-eliminar:hover {
+    color: #c9302c;
+}
+
+.btn-editar:hover {
+    color: #31b0d5;
+}
+
+/* Ajustes de responsividad */
+@media screen and (max-width: 768px) {
+    .tarifa-table {
+        font-size: 12px;
+    }
+
+    .btn-nueva {
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+}
+
+
+
+
+
+/* Formulario de Ingreso */
+.form-container {
+    background-color: #f7f7f7;
+    padding: 40px; 
+    border-radius: 10px;
+    max-width: 700px; 
+    margin: 50px auto; 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); 
+    text-align: center; 
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.form-container label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 16px; 
+    width: 100%; 
+    text-align: left; 
+}
+
+.form-container input[type="text"], 
+.form-container select {
+    padding: 15px; 
+    font-size: 16px; 
+    margin-bottom: 25px; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%; 
+    max-width: 500px; 
+}
+
+.form-container p {
+    font-size: 16px; 
+    margin-bottom: 15px;
+}
+
+.btn-ingresar {
+    background-color: #0275d8;
+    color: white;
+    padding: 15px 40px; 
+    font-size: 18px; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn-ingresar:hover {
+    background-color: #025aa5;
+}
+
+
+
+
+
+/* Contenedor del formulario */
+.form-container {
+    background-color: #f7f7f7;
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 1200px;
+    margin: 50px auto;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Estructura de columnas para alinear izquierda y derecha */
+.column-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Columna izquierda */
+.left-column {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.left-column .form-row {
+    margin-bottom: 25px;
+}
+
+.left-column label {
+    font-weight: bold;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.left-column input[type="text"] {
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+/* Columna derecha */
+.right-column {
+    flex: 1;
+}
+
+.info-vehiculo p, .info-salida p {
+    font-size: 18px;
+    margin: 8px 0;
+}
+
+strong {
+    font-weight: bold;
+}
+
+.btn-pagar {
+    background-color: #0275d8;
+    color: white;
+    padding: 15px 40px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-pagar:hover {
+    background-color: #025aa5;
+}
+
+/* Ajustes de responsividad */
+@media screen and (max-width: 768px) {
+    .form-container {
+        max-width: 90%;
+        padding: 20px;
+    }
+
+    .column-container {
+        flex-direction: column;
+    }
+
+    .btn-pagar {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+.payment-container {
+    width: 70%;
+    margin: 50px auto;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Agrupación de las etiquetas y valores en dos columnas */
+.payment-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Etiquetas y valores alineados */
+.payment-label {
+    font-size: 18px;
+    font-weight: bold;
+    flex: 1;
+}
+
+.payment-data {
+    font-size: 18px;
+    flex: 1;
+    text-align: right;
+}
+
+/* Estilo de los campos de entrada para montos */
+.payment-input {
+    width: 50%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: right;
+}
+
+/* Botón para pagar */
+.btn-pagar {
+    background-color: #0275d8;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.btn-pagar:hover {
+    background-color: #025aa5;
+}
+
+/* Ajustes de responsividad */
+@media screen and (max-width: 768px) {
+    .payment-container {
+        width: 90%;
+    }
+
+    .payment-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .payment-input {
+        width: 100%;
+    }
+}
+
+
+
+
+/* Contenedor principal del historial */
+.historial-container {
+    width: 100%;
+    overflow-x: auto; /* Para permitir scroll horizontal en pantallas pequeñas */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Tabla del historial */
+.table-reporte {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+}
+
+.table-reporte th, 
+.table-reporte td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.table-reporte th {
+    background-color: #0275d8;
+    color: white;
+    font-weight: bold;
+}
+
+.table-reporte td {
+    background-color: #f9f9f9;
+}
+
+.table-reporte tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Icono de ordenamiento */
+.sort-icon {
+    margin-left: 5px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+/* Ajustes responsivos */
+@media screen and (max-width: 768px) {
+    .historial-container {
+        padding: 10px;
+    }
+
+    .table-reporte th, 
+    .table-reporte td {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+
+
